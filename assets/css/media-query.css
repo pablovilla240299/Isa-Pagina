@@ -1,0 +1,173 @@
+/* Pantallas extra grandes (≥1200px) */
+@media (min-width: 1200px) {
+  .isa-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cs_iconbox_inner {
+  min-height: 400px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ✅ Alinea el contenido arriba */
+  gap: 1rem; /* Opcional: separa los elementos un poco */
+}
+
+.cs_iconbox_inner h3 {
+  font-size: 1.8rem; /* Aumenta tamaño del título */
+  font-weight: 600;
+}
+
+.cs_iconbox_inner p {
+  font-size: 1.4rem; /* Aumenta tamaño del párrafo */
+  line-height: 1.6;
+}
+.subtitle{
+  font-size: 2rem;
+}
+.feature-item h3 {
+  font-size: 1.6rem; /* Aumenta tamaño del título */
+  font-weight: 600;
+}
+
+.feature-item p#textos {
+  font-size: 1.15rem; /* Aumenta el párrafo ligeramente */
+  line-height: 1.6;
+}
+.cs_contact_list a{
+  line-height: 4rem;
+  font-size: 2rem;
+}
+.cs_social_btns a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--heading-color);
+  font-size: 14px;
+}
+.cs_social_btns a:hover {
+  background-color: var(--heading-color);
+  border-color: var(--heading-color);
+  color: var(--web-wash);
+}
+.mi-icono-grande {
+  font-size: 25px; /* o 3rem, 4em, etc. */
+}
+
+
+
+
+  
+}
+
+/* Pantallas grandes (≥992px y <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .isa-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+/* Pantallas medianas (≥768px y <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .isa-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Pantallas pequeñas (≥576px y <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .isa-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dispositivos móviles (<576px) */
+@media (max-width: 575.98px) {
+  #name {
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(210, 207, 207, 0.5);
+  }
+
+  .isa-mensaje-central p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+  }
+
+  .isa-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    color: #fff;
+  }
+
+  .isa-card {
+    background: transparent;
+    border-radius: 20px;
+    padding: 0;
+    max-width: 1400px;
+    width: 95%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .isa-card p {
+    text-align: left;
+  }
+
+  #botome {
+    display: flex;
+    align-items: center;
+  }
+  .sticky-section{
+    grid-template-columns: 1fr;
+  }
+  
+  
+}
+@media (max-width: 768px) {
+  /* Contenedor de las cards */
+  .cs_card_flex_container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 20px; /* Espacio entre filas */
+  }
+
+  /* Cada card ocupará todo el ancho disponible */
+  .cs_price_card_centered {
+    width: 100%;
+  }
+
+  /* Ajuste de textos para que no se vea demasiado grande */
+  .cs_price_card_centered h3 {
+    font-size: 1.4rem;
+  }
+
+  .cs_price_amount {
+    font-size: 1.8rem !important;
+  }
+}
+.cs_card_flex_container {
+  display: grid; /* Esto es importante */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
+  gap: 2rem; /* Espacio entre tarjetas */
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* dispositivos grandes tipo laptop */
+   .cs_nav .cs_nav_list > li {
+    margin-right: 10px;
+    height: inherit;
+    position: relative;
+    font-size: 15px;
+  }
+}
+
+

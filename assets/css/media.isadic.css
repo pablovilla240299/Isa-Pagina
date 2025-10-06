@@ -1,0 +1,174 @@
+/* ==============================
+   Estilos responsivos ISA
+   ============================== */
+
+/* --- Teléfonos pequeños (<= 576px) --- */
+@media (max-width: 576px) {
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .isa-card p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .cs_price_amount {
+    font-size: 1.5rem;
+  }
+
+  #tarjetas {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cs_contact_list {
+    font-size: 1rem;
+  }
+  .cs_iconbox_inner p{
+    font-size: 15px;
+    line-height: 2rem;
+  }
+  .sticky-section.card-4 li{
+    font-size: 30px;
+  }
+  .isa-card p, h2{
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: justify;
+  }
+}
+
+/* --- Tablets (>= 577px y <= 768px) --- */
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .isa-card p {
+    font-size: 1.2rem;
+  }
+
+  #tarjetas {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cs_price_amount {
+    font-size: 2rem;
+  }
+  #textos{
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+}
+
+/* --- Pantallas medianas (>= 769px y <= 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .isa-card p {
+    font-size: 1.3rem;
+  }
+
+  .cs_price_amount {
+    font-size: 2.2rem;
+  }
+}
+
+/* --- Escritorio grande (>= 1025px) --- */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .isa-card p {
+    font-size: 1.5rem;
+  }
+
+  .cs_price_amount {
+    font-size: 2.5rem;
+  }
+  #about .imagenes {
+  display: flex;                 /* Coloca los hijos en horizontal */
+  justify-content: space-between; /* Una imagen a la izquierda y otra a la derecha */
+  align-items: center;           /* Centrar verticalmente */
+  gap: 10px;                     /* Espacio opcional entre imágenes */
+}
+
+#about .imagenes img.convenio {
+  max-width: 45%;                /* Ajusta ancho para que quepan ambas en la misma línea */
+  height: auto;
+}
+
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* iPad mini y tablets chicas */
+  #textos{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .sticky-section.card-4 li{
+    font-size: 30px;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* dispositivos grandes tipo tablet horizontal o pantallas medianas */
+    #textos{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+   
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* dispositivos grandes tipo laptop */
+   .cs_nav .cs_nav_list > li {
+    margin-right: 10px;
+    height: inherit;
+    position: relative;
+  }
+  
+}
